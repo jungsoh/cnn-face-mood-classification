@@ -1,12 +1,11 @@
 # Face mood classifier
-TensorFlow Keras Sequential API implementation of a convolutional neural network to classify a face image as happy (smiling) or not
 We have the task of recognizing the mood of people as happy (smiling) or not happy from their face images. This is a binary classification problem and we build a convolutional neural network classifier using TensorFlow Keras Sequential API. I did this project in the [Convolutional Neural Networks](https://www.coursera.org/learn/convolutional-neural-networks) course as part of the [Deep Learning Specialization](https://www.coursera.org/specializations/deep-learning).
 
 ## Datasets
 We have 600 training examples and 150 test examples, where each example is of shape (64, 64, 3) with each of RGB channel image is of size 64x64. The examples are labeled as either 0 for 'not happy' or 1 for 'happy'.
 
 ## Convolutional neural network
-We used TensorFlow Keras Sequential API to build a convolutional neural network model, trained it with the Keras model's `.fit()` and `.evaluate()` method. The model's `.summary()` method shows the following layers and parameters.
+We used TensorFlow Keras Sequential API to build a convolutional neural network model, trained it with the Keras model's `.fit()` and evaluated its performance on the testset with the `.evaluate()` method. The model's `.summary()` method shows the following layers and parameters.
 ```
 Model: "sequential"
 _________________________________________________________________
