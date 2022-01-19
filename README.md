@@ -5,7 +5,7 @@ We have the task of recognizing the mood of people as happy (smiling) or not hap
 We have 600 training examples and 150 test examples, where each example is of shape (64, 64, 3) with each of RGB channel image is of size 64x64. The examples are labeled as either 0 for 'not happy' or 1 for 'happy'.
 
 ## Convolutional neural network
-We used TensorFlow Keras Sequential API to build a convolutional neural network model, trained it with the Keras model's `.fit()` and evaluated its performance on the testset with the `.evaluate()` method. The model's `.summary()` method shows the following layers and parameters.
+We used TensorFlow Keras Sequential API to build a convolutional neural network model. The resulting model's `.summary()` method shows the following layers and parameters.
 ```
 Model: "sequential"
 _________________________________________________________________
@@ -30,3 +30,4 @@ Trainable params: 37,569
 Non-trainable params: 64
 _________________________________________________________________
 ```
+We trained the with the Keras model's `.fit()` and evaluated its performance on the test set with the `.evaluate()` method. The training accuracy is 0.92 and the test accuracy is 0.72.
