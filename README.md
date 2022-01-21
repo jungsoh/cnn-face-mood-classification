@@ -1,4 +1,4 @@
-# Convolutional neural network: Face mood classifier
+# Convolutional neural network: Face mood classification
 We have the task of recognizing the mood of people as happy (smiling) or not happy from their face images. This is a binary classification problem and we build a convolutional neural network classifier using TensorFlow Keras Sequential API. I did this project in the [Convolutional Neural Networks](https://www.coursera.org/learn/convolutional-neural-networks) course as part of the [Deep Learning Specialization](https://www.coursera.org/specializations/deep-learning).
 
 ## Datasets
